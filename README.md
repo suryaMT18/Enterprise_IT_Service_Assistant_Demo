@@ -1,6 +1,6 @@
 Enterprise IT Service & Asset Operations Assistant
 Project Overview
-The Enterprise IT Service & Asset Operations Assistant is an AI-powered application designed to help employees with common IT service and asset-related queries.
+The Enterprise IT Service & Asset Operations Assistant is an AI-powered application designed to help employees with common IT service and asset-related queries..
 
 The application uses a locally running Large Language Model (LLM) through Ollama and a tool-based AI agent to retrieve information, execute predefined operations, and provide responses to user questions.
 
