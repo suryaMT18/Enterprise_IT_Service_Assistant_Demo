@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IT Service & Asset Assistant</title><link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<main class="app-shell">
+<header class="app-header"><div class="brand-mark">IT</div><div><p class="eyebrow">NORTHSTAR ENTERPRISE SERVICES</p><h1>IT Service & Asset Assistant</h1><p class="subtitle">Ask about IT policies, equipment, service tickets and support.</p></div><span class="status-pill">● Local assistant</span></header>
+<section class="notice"><strong>Training environment:</strong> All employee, asset and ticket records are fictional. Incident reports are drafts only and are not submitted to a live service desk.</section>
+<section class="chat-card">
+<div class="chat-heading"><div><h2>Conversation</h2><p>Describe what you need in normal language.</p></div><button id="clearButton" class="button button-quiet" type="button">Clear chat</button></div>
+<div id="chatMessages" class="chat-messages" aria-live="polite"><article class="message assistant-message"><div class="message-avatar">AI</div><div class="message-content"><span class="message-role">Assistant</span><p>Hello! I can help you find IT policy information, check a device or ticket, identify a support team, or prepare an incident draft.</p></div></article></div>
+<div id="typingIndicator" class="typing-indicator" hidden>Assistant is working…</div>
+<form id="chatForm" class="composer"><label class="sr-only" for="messageInput">Your message</label><textarea id="messageInput" rows="2" maxlength="1500" placeholder="Example: Check INC-2041 and explain the escalation process." required></textarea><button id="sendButton" class="button button-primary" type="submit">Send</button></form>
+<div class="prompt-area"><span class="prompt-label">Try an example</span><div class="prompt-chips">
+<button class="chip" type="button" data-prompt="Show the details of asset AST-1002.">Check an asset</button>
+<button class="chip" type="button" data-prompt="What is the laptop replacement policy?">Ask an IT policy</button>
+<button class="chip" type="button" data-prompt="Find the status of ticket INC-2041.">Check a ticket</button>
+<button class="chip" type="button" data-prompt="Prepare an incident draft for asset AST-1002 because the screen is flickering.">Prepare incident draft</button>
+</div></div></section>
+<details class="activity-panel"><summary>Show assistant activity</summary><p class="activity-help">Tool activity returned by the Python backend.</p><ol id="activityList" class="activity-list"><li>No activity yet.</li></ol></details>
+<footer class="app-footer">Enterprise AI training prototype · Python backend · Local model runtime</footer>
+</main><script src="/static/app.js"></script></body></html>
